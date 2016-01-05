@@ -1,0 +1,33 @@
+﻿@model IEnumerable<TheWorld.Models.Trip>
+@{
+    ViewBag.Title = "Trips";
+}
+
+@section Scripts {
+    <script src="~/lib/underscore/underscore-min.js"></script>
+    <script src="~/lib/angular/angular.min.js"></script>
+    <script src="~/lib/angular-route/angular-route.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="~/lib/gmaps/gmaps.min.js"></script>
+    <script src="~/lib/travelmap/travelmap.min.js"></script>
+
+    <environment names="Development">
+        <script src="~/js/simplecontrols.js"></script>
+        <script src="~/js/app-trips.js"></script>
+        <script src="~/js/tripscontroller.js"></script>
+        <script src="~/js/tripeditorcontroller.js"></script>
+    </environment>
+
+    <environment names="Production,Staging">
+        <script src="~/lib/_app/simplecontrols.js"></script>
+        <script src="~/lib/_app/app-trips.js"></script>
+        <script src="~/lib/_app/tripscontroller.js"></script>
+        <script src="~/lib/_app/tripeditorcontroller.js"></script>
+    </environment>
+}
+
+<div class="row" ng-app="app-trips" ng-cloak>
+
+    <div ng-view></div>
+
+</div>

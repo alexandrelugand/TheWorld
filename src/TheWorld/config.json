@@ -1,0 +1,9 @@
+{
+  "AppSettings": {
+    "SiteEmailAddress": "noreply@TheWorld.com",
+    "BingKey": "DONTHARDCODEKEYSINCONFIGURATION"
+  },
+  "Data": {
+    "WorldContextConnection": "Server=(localdb)\\ProjectsV12;Database=TheWorldDB;Trusted_Connection=;MultipleActiveResultSets=true;"
+  }
+}
